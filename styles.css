@@ -1,0 +1,186 @@
+:root {
+  --light-green: #F4F8F4; /* Light Green for background */
+  --dark-gray: #333333; /* Dark Gray for text */
+  --bright-green: #4CAF50; /* Bright Green for buttons */
+  --dark-green: #45A049; /* Dark Green for button hover */
+  --soft-green: #8BC34A; /* Soft Green for accent */
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  background: var(--light-green); /* Background color */
+  color: var(--dark-gray); /* Text color */
+}
+
+h1 {
+  text-align: center;
+  color: var(--dark-gray); /* Header text color */
+}
+
+.container {
+  width: 90%;
+  max-width: 680px;
+  background: var(--light-green); /* Background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+.container,
+.output {
+  margin: 20px auto;
+}
+
+label,
+legend {
+  font-weight: bold;
+  color: var(--dark-gray); /* Label text color */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#budget {
+  width: 50%;
+  max-width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #4CAF50; /* Fresh green border */
+  border-radius: 5px;
+  background-color: #fff; /* White background */
+  color: #333; /* Dark text for contrast */
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#budget:focus {
+  border-color: #28a745; /* Darker green when focused */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Soft green glow */
+}
+
+#budget::placeholder {
+  color: #888; /* Lighter placeholder text */
+}
+
+@media (max-width: 600px) {
+  #budget {
+    max-width: 100%;
+  }
+}
+
+button {
+  cursor: pointer;
+  text-decoration: none;
+  background: var(--bright-green); /* Button color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: var(--dark-green); /* Button hover color */
+}
+
+button,
+input,
+select {
+  min-height: 24px;
+  color: var(--dark-gray); /* Input text color */
+}
+
+fieldset,
+label,
+button,
+input,
+select {
+  margin-bottom: 10px;
+}
+
+.output {
+  background: white; /* White background for the output */
+  border: 2px solid var(--light-green); /* Light Green border */
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.output span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.surplus {
+  color: var(--soft-green); /* Soft Green for surplus */
+}
+
+.deficit {
+  color: var(--dark-green); /* Dark Green for deficit */
+}
+
+/* Style the container for the entry section */
+.entry-container {
+  background-color: white; /* White background for the container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Limit the width for a clean layout */
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Style the label and dropdown section */
+.entry-container label {
+  font-weight: bold;
+  color: var(--dark-gray); /* Dark gray for text */
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block; /* Display the label on its own line */
+}
+
+/* Style the dropdown menu */
+.entry-container select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid var(--light-green); /* Light green border */
+  border-radius: 5px;
+  background-color: var(--light-green); /* Light green background */
+  color: var(--dark-gray); /* Dark gray text for visibility */
+  transition: border-color 0.3s ease; /* Transition on hover */
+}
+
+.entry-container select:hover {
+  border-color: var(--bright-green); /* Change border color on hover */
+}
+
+/* Style the "Add Entry" button */
+.entry-container button {
+  background-color: var(--bright-green); /* Bright green background */
+  color: white; /* White text */
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px; /* Space between the button and dropdown */
+  transition: background-color 0.3s ease;
+}
+
+.entry-container button:hover {
+  background-color: var(--dark-green); /* Darker green on hover */
+}
+
+/* Style the span wrapper for positioning */
+.entry-container span {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align elements inside the container */
+}
+
+
